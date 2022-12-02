@@ -1,7 +1,7 @@
 # TODO: Change the name of the org 
 org: kingof9999
-app: serverless-todo-app-5
-service: serverless-todo-app-5
+app: serverless-todo-app-1
+service: serverless-todo-app-1
 frameworkVersion: '2.72.3'
 plugins:
   - serverless-webpack
@@ -23,11 +23,11 @@ provider:
   # Use these variables in the functions and resouorces section below. For example, 
   # ${self:provider.environment.ATTACHMENT_S3_BUCKET}
   environment:
-    TODOS_TABLE: Serverless-c5-todo-app-5-${self:provider.stage}
+    TODOS_TABLE: Serverless-c1-todo-app-1-${self:provider.stage}
     TODOS_CREATED_AT_INDEX: CreatedAtIndex
-    ATTACHMENT_S3_BUCKET: serverless-c5-todo-app-5-images-${self:provider.stage}
+    ATTACHMENT_S3_BUCKET: serverless-c1-todo-app-1-images-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
-    PROJECT_NAME: serverless-todo-app-5
+    PROJECT_NAME: serverless-todo-app-1
     INDEX_NAME: ${self:provider.environment.TODOS_CREATED_AT_INDEX}
 
   logs:
