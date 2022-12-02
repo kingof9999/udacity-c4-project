@@ -25,7 +25,7 @@ provider:
   environment:
     TODOS_TABLE: Serverless-c1-todo-app-1-${self:provider.stage}
     TODOS_CREATED_AT_INDEX: CreatedAtIndex
-    ATTACHMENT_S3_BUCKET: serverless-c1-todo-app-1-1-images-${self:provider.stage}
+    ATTACHMENT_S3_BUCKET: serverless-c1-todo-app-1-images-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
     PROJECT_NAME: serverless-todo-app-1
     INDEX_NAME: ${self:provider.environment.TODOS_CREATED_AT_INDEX}
@@ -225,6 +225,7 @@ resources:
     # BucketPolicy:
     #   Type: AWS::S3::BucketPolicy
     #   Properties:
+
     BucketPolicy:
       Type: AWS::S3::BucketPolicy
       Properties:
